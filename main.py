@@ -207,7 +207,7 @@ def add_book_title(message):
 
 def add_book_author(message, title):
     author = message.text.strip()
-    msg = bot.send_message(message.chat.id, "Nashr yilini kiriting (masalan: 2020):")
+    msg = bot.send_message(message.chat.id, "Nashr yilini kiriting (masalan: 1990):")
     bot.register_next_step_handler(msg, add_book_year, title, author)
 
 
